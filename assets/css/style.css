@@ -1693,3 +1693,167 @@ hr {
     }
 
 }
+
+.butksaton-satokavate {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 7px;
+    border-radius: 5px;
+    padding: 7px 9px;
+    color: #fbf7f7 !important;
+  }
+  
+  .anelumen {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    -webkit-transition: top 0s .7s, opacity .7s 0s;
+    transition: top 0s .7s, opacity .7s 0s;
+  }
+  
+  .anelumen:target {
+    top: 0;
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+  }
+  
+  .anelumen figure {
+    width: 100%;
+    max-width: 530px;
+    position: relative;
+    padding: 1.8em;
+    opacity: 0;
+    background-color: white;
+    -webkit-transition: opacity .7s;
+    transition: opacity .7s;
+  }
+  
+  .anelumen.lowingnuska figure {
+    background: #f9f5f5;
+    border-radius: 7px;
+    padding-top: 8px;
+    border: 3px solid #aaabad;
+  }
+  
+  .anelumen.lowingnuska figure h2 {
+    margin-top: 0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #dcd7d7;
+  }
+  
+  .anelumen:target figure {
+    opacity: 1;
+  }
+  
+  .anelumen.lowingnuska .compatibg-ukastywise {
+    text-decoration: none;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    font-size: 41px;
+  }
+  
+  .anelumen .nedismiseg {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(10, 10, 10, 0.87);
+    content: "";
+    cursor: default;
+    visibility: hidden;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+  }
+  
+  .anelumen:target .nedismiseg {
+    visibility: visible;
+  }
+
+  .iw-modal-btn {
+    background:#013C74; /*цвет фона кнопки*/
+    color:#fff; /*цвет шрифта*/
+    text-align:center;
+    display:inline-block;
+    padding:10px 20px; /*внутренние отступы*/
+    text-decoration:none;
+    font-size:17px; /*размер шрифта*/
+    margin-top:30px;
+    transition: all 0.5s ease;
+    }
+
+    .iw-modal {
+        opacity: 0; /*изначально этот блок должен быть прозрачным*/ 
+        background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+        pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+        position: fixed; 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        transition: all 0.5s ease;
+        margin: 0;
+        padding: 0;
+        }
+        .iw-modal:target {
+        opacity: 1; /*при клике блок становится видимым*/
+        pointer-events: auto; /*теперь по блоку можно кликать мышкой*/
+        overflow-y: auto; /*прокрутка по вертикли страницы*/
+        }
+        .iw-modal-wrapper {
+        margin:auto; /*выравниваем модальное окно по центру по горизонтали*/
+        margin-top:25vh; /*отступ сверху можно задавать в px, % или vh*/
+        }
+        /*CSS-свойства для блока, содержащего контент модального окна */ 
+        .iw-CSS-modal-inner {
+        position: relative;
+        background: #fff; /*цвет фона*/
+        border: 1px solid #ccc; /*цвет и толщина рамки*/
+        border-radius: 0px; /*радиус скругления углов*/
+        }
+        /*CSS-свойства заголовка модального окна */
+        .iw-modal-header {
+        padding: 15px;/*внутренний отступ*/
+        background:#f1f1f1;/*цвет фона*/
+        position:relative;
+        }
+        .iw-modal-title {
+        font-size: 18px; /*размер шрифта*/
+        color:#555; /*цвет шрифта*/
+        font-weight:bold; /*жирность шрифта*/
+        line-height: 1.5; /*высота строки*/
+        margin-top: 0;
+        margin-bottom: 0;
+        }
+        /*CSS для кнопки закрытия*/
+        .iw-close {
+        position:absolute;
+        top:15px; /*отступ сверху*/
+        right:10px; /*отступ справа*/
+        font-size: 24px; /*размер шрифта*/
+        color: #555; /*цвет шрифта*/
+        text-decoration: none;
+        }
+        .iw-close:hover, .iw-close:focus {
+        color: #000; /*цвет шрифта при наведении*/
+        cursor: pointer;
+        }
+        /*CSS для блока с текстом*/
+        .iw-modal-text {
+        padding: 15px 20px; /*внутренний отступ*/
+        }
+        /**MEDIA**/
+        @media (min-width: 550px) {
+        .iw-modal-wrapper {
+        max-width: 500px;
+        }
+        }
