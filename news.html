@@ -53,59 +53,45 @@
             <div class="section__header">
                 <h2 class="section__title">Новости</h2>
             </div>
-
-            <div class="blog-card">
-              <input type="radio" name="select" id="tap-1" checked>
-              <input type="radio" name="select" id="tap-2">
-              <input type="radio" name="select" id="tap-3">
-              <input type="checkbox" id="imgTap">
-              <div class="sliders">
-                <label for="tap-1" class="tap tap-1"></label>
-                <label for="tap-2" class="tap tap-2"></label>
-                <label for="tap-3" class="tap tap-3"></label>
-              </div>
-              <div class="inner-part">
-                <label for="imgTap" class="img">
-                  <img class="img-1" src="assets/images/blog/obnova.jpg">
-                </label>
-                <div class="content content-1">
-                  <span>22 Февраль 2021</span>
-                  <div class="title">
-        Обновление V1.5</div>
-        <div class="text">
-        • Обновили вкладку "Новости" - перекидует на новую страницу + новое оформ...</div>
-        <a href="#v5" class="iw-modal-btn">Подробнее...</a>
-                </div>
-      </div>
-      <div class="inner-part">
-              <label for="imgTap" class="img">
-                <img class="img-2" src="assets/images/blog/1.jpg">
-              </label>
-              <div class="content content-2">
-                <span>21 Февраля 2021</span>
-                <div class="title">
-      Радио "Sl Fm"</div>
-      <div class="text">
-      Привет, мы создали Радио "SL Fm"...</div>
-      <a href="#rad" class="iw-modal-btn">Подробнее...</a>
-              </div>
-      </div>
-      </div>
-        <div class="inner-part">
-                <label for="imgTap" class="img">
-                  <img class="img-3" src="assets/images/blog/soon.jpg">
-                </label>
-                <div class="content content-3">
-                  <span>...</span>
-                  <div class="title">
-        Ожидание</div>
-        <div class="text">
-        .......</div>
-        <a href="#soon" class="iw-modal-btn">Подробнее...</a>
-                </div>
-        </div>
-        </div>
-        
+          
+        <div class="demo">
+          <div class="container"> 
+              <div class="row">
+                  <div class="col-md-12">
+                      <div id="news-slider2" class="owl-carousel">
+                          <div class="post-slide2">
+                              <div class="post-img">
+                                  <a href="#"><img src="assets/images/blog/obnova.jpg" alt=""></a>
+                              </div>
+                              <div class="post-content">
+                                  <h3 class="post-title"><a href="#">Обновление V1.6</a></h3>
+                                    <p class="post-description"><b>• Добавлена категория "Города"</b></p>
+                                      <p class="post-description"><b>• Исправлены благи</b></p>
+                                        <p class="post-description"><b>• Купили печенек к чаю ʕ ᵔᴥᵔ ʔ</b></p>
+                                          <p class="post-description"> <b>• Добавлена категория "Главная" - Быстрое перемещение на главную страницу.</b></p>
+                                            <p class="post-description"><b>• Обновили вкладку "Новости" - перекидует на новую страницу + новое оформление.</b></p>
+                                              <p class="post-description"><b>• Исправил баги</b></p>
+                                                <p class="post-description"> <b>• При входе добавил окно "Обновление" и конфети.</b></p>
+                                  <ul class="post-bar">
+                                      <li><i class="fa fa-calendar"></i> 21 Февраля 2021</li>
+                                  </ul>
+                              </div>
+                          </div>
+       
+                          <div class="post-slide2">
+                              <div class="post-img">
+                                  <a href="https://youtu.be/f-nCiSmnIws"><img src="assets/images/blog/1.jpg" alt=""></a>
+                              </div>
+                              <div class="post-content">
+                                  <h3 class="post-title"><a href="#">Радио "SL Fm"</a></h3>
+                                  <p class="post-description">
+                                    <p class="post-description"><b>• dogushka и Gumball_great создали Радио "Sl Fm"! Там уже прошли первые подкасты</b></p>
+                                  </p>
+                                  <ul class="post-bar">
+                                      <li><i class="fa fa-calendar"></i>21 Февраля 2021</li>
+                                  </ul>
+                              </div>
+                          </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -129,27 +115,6 @@
   startit();
   stopit();
 </script>
-
-<!---Разметка для модального окна---->
-<div id="v5" class="iw-modal">
-    <div class="iw-modal-wrapper">
-    <div class="iw-CSS-modal-inner">
-    <div class="iw-modal-header">
-    <h3 class="iw-modal-title">Обновление V1.5</h3>
-    <a href="#close" title="Закрыть" class="iw-close">×</a>
-    </div>
-    <div class="iw-modal-text">
-        <p class="blog-post_text"><b>• Добавлена категория "Города"</b></p>
-        <p class="blog-post_text"><b>• Исправлены благи</b></p>
-        <p class="blog-post_text"><b>• Купили печенек к чаю ʕ ᵔᴥᵔ ʔ</b></p>
-        <p class="blog-post_text"><b>• Добавлена категория "Главная" - Быстрое перемещение на главную страницу.</b></p>
-        <p class="blog-post_text"><b>• Обновили вкладку "Новости" - перекидует на новую страницу + новое оформление.</b></p>
-        <p class="blog-post_text"><b>• Добавили конфети при входе на сайт.</b></p>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!---end.Разметка для модального окна---->
 
     <!---Разметка для модального окна---->
 <div id="rad" class="iw-modal">
