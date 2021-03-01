@@ -6,8 +6,6 @@ body {
     color: #333;
 }
 
-
-
 *,
 *:before,
 *:after {
@@ -2471,47 +2469,4 @@ input[type="checkbox"]{
 .post-slide2 .post-bar li a:hover{color:#3d3030;text-decoration:none}
 .post-slide2 .read-more{display:inline-block;padding:10px 15px;font-size:14px;font-weight:700;color:#fff;background:#e7989a;border-bottom-right-radius:10px;text-transform:capitalize;transition:all .3s linear}
 .post-slide2 .read-more:hover{background:#333;text-decoration:none}
-
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
-html {
-    display: block;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-::-webkit-scrollbar-button {
-    background-image: none;
-    background-repeat: no-repeat;
-    height: 0;
-    margin: 1px;
-}
-::-webkit-scrollbar-corner {
-    background-color: transparent;
-    color: transparent;
-    width: 0;
-    display: none;
-}
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
-    background-color: #8c8c8c;
-}
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
+  
